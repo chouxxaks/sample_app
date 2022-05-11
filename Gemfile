@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails',      '6.0.4'
 gem 'bootstrap-sass', '3.3.7'
+gem 'faker',      '2.20.0'
+gem 'will_paginate',           '3.3.1'
+gem 'bootstrap-will_paginate', '1.0.0'
 gem 'puma',       '4.3.6'
 gem 'sass-rails', '5.1.0'
 gem 'webpacker',  '4.0.7'
@@ -10,6 +13,7 @@ gem 'turbolinks', '5.2.0'
 gem 'jbuilder',   '2.9.1'
 gem 'bootsnap',   '1.10.3', require: false
 gem 'bcrypt',     '3.1.12'
+gem 'jquery-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.4.1'
