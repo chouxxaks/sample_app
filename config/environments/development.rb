@@ -1,4 +1,5 @@
 Rails.application.configure do
+  
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -64,5 +65,12 @@ Rails.application.configure do
   config.hosts.clear
   
   config.web_console.whitelisted_ips = '133.201.14.161' # ホワイトリストに追記
+  
+  
+  config.action_mailer.raise_delivery_errors = false
+  host = '39be319d407e4c7a909954bec3ccfe72.vfs.cloud9.us-east-1.amazonaws.com'
+
+  config.action_mailer.default_url_options = { host: host, protocol: 'https' }
+  
   
 end
